@@ -34,7 +34,7 @@ jobs:
       - if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y --no-install-recommends pkg-config libxkbcommon-dev libwayland-dev libx11-dev \
+          sudo apt-get install -y --no-install-recommends pkg-config libxkbcommon-dev libxkbcommon-x11-dev libwayland-dev libx11-dev \
             libxcursor-dev libxrandr-dev libxi-dev libgl1-mesa-dev libdbus-1-dev
       - run: cargo clippy ${{ inputs.test-args }} --all-targets -- -D warnings
       - run: cargo test ${{ inputs.test-args }}
