@@ -30,7 +30,7 @@ Paste a link, see the real title, thumbnail and qualities, pick a format and dow
 
 ## Install
 
-waydlp is in early development and **no release has been published yet**. Once releases exist, they will be on each repository's *Releases* page with SHA-256 checksums. Until then, follow the "Building from source" sections in the repository READMEs.
+waydlp is in early development. Find published builds on each repository's *Releases* page with SHA-256 checksums. Signed [Android 0.1.0 APKs](https://github.com/waywhywhy/waydlp-mobile-dart/releases/tag/v0.1.0) are available now. For source builds, follow the "Building from source" sections in the repository READMEs.
 
 ## Contributing
 
