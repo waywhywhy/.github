@@ -32,6 +32,22 @@ Paste a link, see the real title, thumbnail and qualities, pick a format and dow
 
 waydlp is in early development. [Desktop 0.1.0 builds](https://github.com/waywhywhy/waydlp-desktop-rust/releases/tag/v0.1.0) and signed [Android 0.1.0 APKs](https://github.com/waywhywhy/waydlp-mobile-dart/releases/tag/v0.1.0) are available with SHA-256 checksums. For source builds, follow the "Building from source" sections in the repository READMEs.
 
+Install the latest stable desktop app and CLI from your terminal. Both installers detect x64/ARM64, verify SHA-256 checksums and install for your user without administrator access.
+
+**Windows (PowerShell):**
+
+```powershell
+& ([scriptblock]::Create((irm 'https://github.com/waywhywhy/waydlp-desktop-rust/releases/latest/download/install.ps1')))
+```
+
+**Linux (requires curl and sha256sum):**
+
+```sh
+curl -fsSL https://github.com/waywhywhy/waydlp-desktop-rust/releases/latest/download/install.sh -o install-waydlp.sh && sh install-waydlp.sh
+```
+
+The scripts print launch, CLI, verification and uninstall commands. Run the same command again to upgrade. See the [installation guide](https://github.com/waywhywhy/waydlp-desktop-rust#command-line-installer) for custom folders and pinned versions.
+
 ## Contributing
 
 Contributions are welcome: bug reports, documentation, testing on your distribution or device, and code. Start with the [contributing guide](https://github.com/waywhywhy/.github/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/waywhywhy/.github/blob/main/CODE_OF_CONDUCT.md). Report security issues privately; see the [security policy](https://github.com/waywhywhy/.github/blob/main/SECURITY.md).

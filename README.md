@@ -2,6 +2,8 @@
 
 Organisation-wide files for the waydlp project.
 
+To install waydlp on Windows or Linux from your terminal, see the [install commands on our organisation profile](profile/README.md#install).
+
 | Path | Purpose |
 |---|---|
 | `profile/README.md` | The organisation profile shown on github.com/waywhywhy |
