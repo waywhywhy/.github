@@ -1,0 +1,56 @@
+name: "📦 Installation problem"
+description: Installing, updating or uninstalling waydlp fails.
+labels: [installation, triage]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Desktop (Windows)
+        - Desktop (Linux)
+        - Android
+        - Website
+        - CLI (waydlp-cli / waydlp-installer)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: waydlp version
+      description: Shown in About.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: method
+    attributes:
+      label: Installation method
+      options:
+        - Windows setup .exe
+        - Windows MSI
+        - Windows portable zip
+        - AppImage
+        - .deb
+        - .rpm
+        - Arch (PKGBUILD / pkg.tar.zst)
+        - Flatpak
+        - tar.gz / waydlp-installer
+        - Android APK
+        - Built from source
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS / distribution and version
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include exact commands and output (for example `waydlp-installer detect` and `waydlp-installer verify`).
+      render: text
+    validations:
+      required: true

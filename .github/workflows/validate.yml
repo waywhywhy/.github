@@ -1,0 +1,17 @@
+name: Validate community files
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  yaml:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install yamllint
+      - run: yamllint -d "{extends: relaxed, rules: {line-length: disable}}" ISSUE_TEMPLATE .github/workflows workflow-templates

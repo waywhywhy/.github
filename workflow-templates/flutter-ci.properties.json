@@ -1,0 +1,6 @@
+{
+  "name": "waydlp Flutter CI",
+  "description": "dart format, flutter analyze and flutter test.",
+  "iconName": "octicon device-mobile",
+  "categories": ["Dart"]
+}

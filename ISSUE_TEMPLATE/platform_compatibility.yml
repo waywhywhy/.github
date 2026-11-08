@@ -1,0 +1,43 @@
+name: "🧩 Platform compatibility"
+description: waydlp doesn't start or misbehaves on a specific OS, distribution, desktop environment or device.
+labels: [compatibility, triage]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Desktop (Windows)
+        - Desktop (Linux)
+        - Android
+        - Website
+        - CLI (waydlp-cli / waydlp-installer)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: waydlp version
+      description: Shown in About.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      description: OS/distro version, desktop environment, X11 or Wayland, GPU and driver (desktop), or device model (Android).
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens?
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Desktop logs are in the folder opened by Settings > yt-dlp & FFmpeg > Open logs folder. Start with WAYDLP_LOG=debug for more detail.
+      render: text

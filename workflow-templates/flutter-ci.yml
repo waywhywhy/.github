@@ -1,0 +1,13 @@
+name: Flutter CI
+
+on:
+  push:
+    branches: [$default-branch]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    uses: waywhywhy/.github/.github/workflows/flutter-ci.yml@main

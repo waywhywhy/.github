@@ -1,0 +1,22 @@
+name: "🌐 Website problem"
+description: Broken link, wrong information, layout or accessibility issue on the website.
+labels: [website, triage]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page URL or path
+      placeholder: /download
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What's wrong?
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Firefox on Windows 11 / Chrome on Android 15

@@ -1,0 +1,6 @@
+{
+  "name": "waydlp website CI",
+  "description": "Formatting, lint, type check, tests and production build for Next.js.",
+  "iconName": "octicon globe",
+  "categories": ["TypeScript"]
+}

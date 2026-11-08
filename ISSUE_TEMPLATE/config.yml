@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/waywhywhy/.github/blob/main/SECURITY.md
+    about: Please report security problems privately, never in a public issue.
+  - name: Documentation and troubleshooting
+    url: https://github.com/waywhywhy/waywhy-website/tree/main/content/docs
+    about: Many problems (outdated yt-dlp, missing FFmpeg, sign-in required) are explained here.
+  - name: A site also fails with plain yt-dlp
+    url: https://github.com/yt-dlp/yt-dlp/issues
+    about: If `yt-dlp <url>` fails too, the extractor problem belongs to yt-dlp.

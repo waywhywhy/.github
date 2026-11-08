@@ -1,0 +1,60 @@
+name: "🎞 Download / extraction problem"
+description: A link fails to analyse or download.
+labels: [extraction, triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        First update yt-dlp (desktop: Settings > yt-dlp & FFmpeg; Android: Settings > yt-dlp), then retry.
+        If plain `yt-dlp <url>` also fails, please report it to [yt-dlp](https://github.com/yt-dlp/yt-dlp/issues) instead.
+        Only report content you have the right to access. Requests to circumvent DRM will be closed.
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Desktop (Windows)
+        - Desktop (Linux)
+        - Android
+        - Website
+        - CLI (waydlp-cli / waydlp-installer)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: waydlp version
+      description: Shown in About.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: ytdlp
+    attributes:
+      label: yt-dlp version
+      placeholder: "2026.10.26"
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Example link (public content only)
+  - type: dropdown
+    id: plain
+    attributes:
+      label: Does plain yt-dlp work with this link?
+      options: ["Yes, only waydlp fails", "No, yt-dlp fails too", "I don't know"]
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options used
+      placeholder: Video, MP4, 1080p, subtitles on
+  - type: textarea
+    id: details
+    attributes:
+      label: Error and technical details
+      render: text
+    validations:
+      required: true

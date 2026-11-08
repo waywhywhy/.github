@@ -1,0 +1,66 @@
+name: "🐞 Bug report"
+description: Something in waydlp doesn't work as it should.
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! Please search existing issues first. For security problems, use private reporting instead.
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - Desktop (Windows)
+        - Desktop (Linux)
+        - Android
+        - Website
+        - CLI (waydlp-cli / waydlp-installer)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: waydlp version
+      description: Shown in About.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Operating system and version
+      placeholder: Windows 11 23H2 / Fedora 43 / Android 15 (Pixel 8)
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Paste https://...
+        2. Choose MP3 320 kbps
+        3. Press Download
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Technical details / logs
+      description: Copy the "Technical details" from the error view or relevant log lines. Remove anything private.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I removed private information (cookies, account names, private links).
+          required: true

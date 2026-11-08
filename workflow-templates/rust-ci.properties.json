@@ -1,0 +1,6 @@
+{
+  "name": "waydlp Rust CI",
+  "description": "Formatting, clippy and tests for waydlp Rust workspaces on Linux and Windows.",
+  "iconName": "octicon gear",
+  "categories": ["Rust"]
+}
