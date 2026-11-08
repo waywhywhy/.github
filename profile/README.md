@@ -48,6 +48,8 @@ curl -fsSL https://github.com/waywhywhy/waydlp-desktop-rust/releases/latest/down
 
 The scripts print launch, CLI, verification and uninstall commands. Run the same command again to upgrade. See the [installation guide](https://github.com/waywhywhy/waydlp-desktop-rust#command-line-installer) for custom folders and pinned versions.
 
+**Android (Obtainium):** [Add waydlp to Obtainium](https://apps.obtainium.imranr.dev/redirect?r=obtainium://app/%7B%22id%22%3A%22io.github.waywhywhy.waydlp%22%2C%22url%22%3A%22https%3A%2F%2Fgithub.com%2Fwaywhywhy%2Fwaydlp-mobile-dart%22%2C%22author%22%3A%22waywhywhy%22%2C%22name%22%3A%22waydlp%22%2C%22additionalSettings%22%3A%22%7B%5C%22apkFilterRegEx%5C%22%3A%5C%22%5Ewaydlp-.%2A-android-universal%5B.%5Dapk%24%5C%22%2C%5C%22includePrereleases%5C%22%3Afalse%2C%5C%22autoApkFilterByArch%5C%22%3Afalse%2C%5C%22verifyLatestTag%5C%22%3Atrue%7D%22%7D) to install and track stable updates from GitHub Releases. The configuration selects the universal APK for ARM64, ARMv7 and x64. See the [Obtainium guide](https://github.com/waywhywhy/waydlp-mobile-dart/blob/main/docs/OBTAINIUM.md) for manual setup.
+
 ## Contributing
 
 Contributions are welcome: bug reports, documentation, testing on your distribution or device, and code. Start with the [contributing guide](https://github.com/waywhywhy/.github/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/waywhywhy/.github/blob/main/CODE_OF_CONDUCT.md). Report security issues privately; see the [security policy](https://github.com/waywhywhy/.github/blob/main/SECURITY.md).
