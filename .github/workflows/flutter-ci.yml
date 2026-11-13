@@ -2,6 +2,11 @@ name: Reusable Flutter CI
 
 on:
   workflow_call:
+    inputs:
+      flutter-version:
+        description: Flutter version (pinned; new releases can break CI)
+        type: string
+        default: '3.47.9'
 
 permissions:
   contents: read
@@ -14,6 +19,7 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           channel: stable
+          flutter-version: ${{ inputs.flutter-version }}
           cache: true
       - run: flutter pub get
       - run: dart format --output=none --set-exit-if-changed lib test

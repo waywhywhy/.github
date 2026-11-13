@@ -30,7 +30,7 @@ Paste a link, see the real title, thumbnail and qualities, pick a format and dow
 
 ## Install
 
-waydlp is in early development. [Desktop 0.1.0 builds](https://github.com/waywhywhy/waydlp-desktop-rust/releases/tag/v0.1.0) and signed [Android 0.1.0 APKs](https://github.com/waywhywhy/waydlp-mobile-dart/releases/tag/v0.1.0) are available with SHA-256 checksums. For source builds, follow the "Building from source" sections in the repository READMEs.
+waydlp is in early development. [Desktop 0.2.0 builds](https://github.com/waywhywhy/waydlp-desktop-rust/releases/tag/v0.2.0) and signed [Android 0.2.0 APKs](https://github.com/waywhywhy/waydlp-mobile-dart/releases/tag/v0.2.0) are available with SHA-256 checksums. For source builds, follow the "Building from source" sections in the repository READMEs.
 
 Install the latest stable desktop app and CLI from your terminal. Both installers detect x64/ARM64, verify SHA-256 checksums and install for your user without administrator access.
 
